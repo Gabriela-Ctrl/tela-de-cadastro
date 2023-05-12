@@ -5,84 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
 
-            <h1>Criar Conta</h1>
-            <div class="social-media"></div>
+        <h1>Criar conta</h1>
+        <div class="social-media">
+            <a href="https://www.google.com/" target="_blank">
+                <img src="assets/google.png" alt="Google">
+            </a>
 
-                <a href="https://www.google.com.br/?gws_rd=ssl" target="_blank">
-                    <img src="assets/google.png" alt="Google">
-                </a>
-           
+            <a href="https://pt-br.facebook.com/" target="_blank">
+                <img src="assets/facebook.png" alt="facebook">
+            </a>
 
-                <a href="https://pt-br.facebook.com/" target="_blank">
-                    <img src="assets/facebook.png" alt="Facebook">
-                </a>
+            <a href="https://br.linkedin.com/" target="_blank">
+                <img src="assets/linkedin.png" alt="linkedin">
+            </a>
+        </div>
+
+        <!-- ___________________________________________________ -->
+        <!-- Linha com a divisão -->
+
+        <div class="alternative">
+            <span>OU</span>
+        </div>
+
+        <!-- ___________________________________________________ -->
+        <!-- Início do formulário -->
+
+        <form action="https://api.sheetmonkey.io/form/dGaTqhi1mUB5GMftwkUe2z" method="post">
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="name" name="name">
+            </label>
+
+            <label>
+                <span>CEP:</span>
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);">
+            </label>
+
+            <label>
+                <span>Rua:</span>
+                <input name="rua" type="text" id="rua" size="60">
+            </label>
+
+            <label>
+                <span>Bairro:</span>
+                <input name="bairro" type="text" id="bairro" size="40">
+            </label>
         
 
-                <a href="https://br.linkedin.com/" target="_blank">
-                    <img src="assets/linkedin.png" alt="Linkedin">
-                </a>
+            <label>
+                <span>Cidade:</span>
+                <input name="cidade" type="text" id="cidade" size="40">
+            </label>
 
-            </div>
-<!--___________________________________________________ -->
+            <label>
+                <span>Estado:</span>
+                <input name="uf" type="text" id="uf" size="2">
+            </label>
 
-            <div class="alternative">
-                <span>OU</span>
-            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <!-- ___________________________________________________ -->
+    <!-- Imagem lateral -->
 
-<!-- __________________________________________________ -->
-            <form action="https://api.sheetmonkey.io/form/me8wP3dW4rGg45mCyLr2AR" method="post">
-                <label for="name">
-                    <span>Nome</span>
-                    <input type="text" id="name" name="name">
-                </label>
+    <section class="images">
 
-                <label>
-                    <span></span>
-                    <input type="text" id="cep" name="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);">
-                </label>
+        <img src="assets/mobile.svg" alt="mobile">
+        <div class="circle"></div>
 
-                <label>
-                    <span>Rua</span>
-                    <input type="text" id="rua" name="rua" size="60">
-                </label>
+    </section>
 
-                <label>
-                    <span>Bairro</span>
-                    <input type="text" id="bairro" name="bairro" size="40">
-                </label>
+    <!-- ___________________________________________________ -->
+    <!-- Adicionando Javascript (Para traar CEP) -->
 
-                <label>
-                    <span>Cidade</span>
-                    <input type="text" id="cidade" name="cidade" size="40">
-                </label>
+    <script src="cep.js"></script>
 
-            
-                <label>
-                    <span>Estado</span>
-                    <input type="text" id="uf" name="uf" size="2">
-                </label>
-
-
-                <input type="submit" value="Enviar">
-            </form>
-        </main>
-<!-- __________________________________________________ -->
-
-        <section class="images">
-
-                <img src="assets/mobile.svg" alt="mobile">
-                <div class="circle"></div>
-
-        </section>
-        
-<!-- __________________________________________________ -->
-        <script src="cep.js"></script>
-
-        
 </body>
 </html>
